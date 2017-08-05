@@ -92,6 +92,9 @@ public class Payment {
 	
 	@SerializedName("receipt_url")
 	String receipt_url;
+
+	@SerializedName("bank_name")
+	String bank_name;
 	
 	public String getImpUid() {
 		return imp_uid;
@@ -208,4 +211,6 @@ public class Payment {
 	public String getReceiptUrl() {
 		return receipt_url;
 	}
+
+	public String getBankName() { return bank_name; }
 }
