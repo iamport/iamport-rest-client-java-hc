@@ -26,20 +26,20 @@ public class IamportClientTest {
 	
 	@Test
 	public void testGetPaymentByImpUid() throws Exception {		
-		IamportResponse<Payment> paymentByimpuid = client.paymentByImpUid("imps_146154615717");
+		IamportResponse<Payment> paymentByimpuid = client.paymentByImpUid("imp_448280090638");
 		System.out.println(paymentByimpuid.getResponse().getImpUid());
 	}
 
 	@Test
 	public void testGetPaymentByMerchantUid() throws Exception {		
-		IamportResponse<Payment> paymentByMerchantUid = client.paymentByMerchantUid("merchant_1448006668555");
+		IamportResponse<Payment> paymentByMerchantUid = client.paymentByMerchantUid("merchant_1448280088556");
 		System.out.println(paymentByMerchantUid.getResponse().getMerchantUid());
 	}
 	
 	@Test
 	public void testCancelPaymentByImpUid() throws Exception {
 		//이미 취소된 거래 imp_uid
-		CancelData cancel1 = new CancelData("imp_1411648292162", true);
+		CancelData cancel1 = new CancelData("imp_448280090638", true);
 		IamportResponse<Payment> cancelpayment1 = client.cancelPayment(cancel1);
 		System.out.println(cancelpayment1.getMessage());
 	}
@@ -47,7 +47,7 @@ public class IamportClientTest {
 	@Test
 	public void testCancelPaymentByMerchantUid() throws Exception {
 		//이미 취소된 거래 merchant_uid
-		CancelData cancel2 = new CancelData("iamport_1416218882181", false);
+		CancelData cancel2 = new CancelData("merchant_1448280088556", false);
 		IamportResponse<Payment> cancelpayment2 = client.cancelPayment(cancel2);
 		System.out.println(cancelpayment2.getMessage());
 	}
