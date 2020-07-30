@@ -4,7 +4,7 @@ JAVA 1.5, 1.6버전 사용자들을 위한 Apache HttpClient기반의 java용 �
 기존에 제공된 JAVA 1.7 이상 버전용 Client - [https://github.com/iamport/iamport-rest-client-java](https://github.com/iamport/iamport-rest-client-java)
 
 ## 설치
-[JitPack](https://jitpack.io/) 을 통해 maven설정을 하실 수 있습니다.  
+[JitPack](https://jitpack.io/#iamport/iamport-rest-client-java-hc) 을 통해 maven설정을 하실 수 있습니다.  
 
 pom.xml에 아래의 내용을 추가해주세요. 
 
