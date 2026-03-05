@@ -26,7 +26,7 @@ pom.xml에 아래의 내용을 추가해주세요.
 <dependency>
     <groupId>com.github.iamport</groupId>
     <artifactId>iamport-rest-client-java-hc</artifactId>
-    <version>0.0.2</version>
+    <version>0.1.0</version>
 </dependency>
 ```
 
